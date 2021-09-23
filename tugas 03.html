@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+  <h1>
+    USER FORM
+  </h1>
+</head>
+<style>
+  body {background-color:blue;}
+  h1 {caret-color: black;}
+  </style>
+<body>
+    <form method="GET" enctype="multipart/form-data">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <div>
+        <label for="date">Birthdate</label>
+        <input type="date" name="date" id="date" min="2019-06-10">
+      </div>
+        Gender
+        <div>
+          <label for="male">male</label>
+          <input type="checkbox" name="male" id="male">
+          <label for="female">female</label>
+          <input type="checkbox" name="female" id="female">
+        </div>
+      <div>
+        <label for="Address">Address</label>
+        <textarea id="Address" name="Address"></textarea>
+      </div>
+      <input type="hidden" name="hidden" value="hi">
+      <div>
+        <label for="file">Foto</label>
+        <input id="file" type="file" name="file">
+      </div>
+      Status
+      <div>
+        <label for="Maried">Maried</label>
+        <input type="radio" name="Status" id="Status" value="Status">
+      </div>
+      <div>
+        <label for="Unmaried">Unmeried</label>
+        <input type="radio" name="Status" id="Status" value="Status">
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
